@@ -1,116 +1,97 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ouvir para Cuidar – Canal de Escuta Trianon</title>
-  <meta name="description" content="Canal de escuta para alunos do curso técnico em enfermagem do Instituto Educacional Trianon. Espaço seguro para compartilhar dificuldades, sugestões e sentimentos." />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <div class="brand">
-        <svg class="logo" width="48" height="48" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 12c0 4.418 3.582 8 8 8 1.657 0 3.179-.438 4.49-1.19"/>
-            <path d="M21 21l-3-3"/>
-            <path d="M12 3a4 4 0 0 1 0 8 4 4 0 0 1 0-8z"/>
-          </g>
-        </svg>
-        <div class="titles">
-          <h1>Ouvir para Cuidar</h1>
-          <p class="subtitle">Canal de Escuta Trianon</p>
-        </div>
-      </div>
-    </div>
-  </header>
+:root{
+  --bg: #f0f7ff;
+  --card: #ffffff;
+  --primary: #2b6cb0; /* azul mais vivo */
+  --accent: #ff9068; /* coral suave */
+  --muted: #6b7280;
+  --text: #102027;
+  --surface: #f8fbff;
+  --radius: 14px;
+  --max-width: 1100px;
+}
 
-  <main class="container" role="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <h2 id="hero-title">Todo aluno tem uma história. E toda história merece ser ouvida.</h2>
-      <p class="lead">
-        O Canal de Escuta é um espaço criado em parceria entre a coordenação pedagógica e o estágio de Licenciatura em Enfermagem da Unicamp. Nosso objetivo é conhecer e apoiar os alunos nas suas dificuldades e vivências. Suas respostas são tratadas com confidencialidade e segurança: este é um espaço seguro para que você seja ouvido sem julgamentos.
-      </p>
-      <div class="hero-actions">
-        <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfOy_RlPwon6Fhk13V88O_FCjgmF14OnLKqZ6727gmkRhC2UA/viewform?usp=header" id="form-link" rel="noopener" target="_blank" aria-label="Responder ao Formulário de Escuta (abre em nova aba)">
-          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M3 8h18M7 12h10M7 16h6M5 21h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1z"/>
-          </svg>
-          Responder ao Formulário de Escuta
-        </a>
-      </div>
-      <p class="small-muted">Sua voz é importante. Falar é um ato de coragem e cuidado.</p>
-    </section>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
-    <section class="card" aria-labelledby="why-title">
-      <div class="card-inner">
-        <div class="icon-wrap" aria-hidden="true">
-          <svg class="feature-icon" width="48" height="48" viewBox="0 0 24 24">
-            <path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M12 3c1.8 0 5 .9 5 5 0 4-3 5-3 8v2"/>
-            <path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M9 9a3 3 0 1 1 6 0"/>
-          </svg>
-        </div>
-        <div>
-          <h3 id="why-title">Por que esse canal existe?</h3>
-          <p>
-            O canal foi criado para que os alunos possam expressar, de forma segura e confidencial, suas dificuldades, sugestões e sentimentos sobre o curso técnico. As respostas ajudam a escola a melhorar o acolhimento e o apoio oferecido aos estudantes.
-          </p>
-        </div>
-      </div>
-    </section>
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  background:linear-gradient(180deg,var(--bg),#ffffff);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.5;
+}
 
-    <section class="card" aria-labelledby="how-title">
-      <div class="card-inner">
-        <div class="icon-wrap" aria-hidden="true">
-          <svg class="feature-icon" width="48" height="48" viewBox="0 0 24 24">
-            <path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M3 12c2-3 6-5 9-5s7 2 9 5v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6z"/>
-            <path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M8 12v-2a4 4 0 0 1 8 0v2"/>
-          </svg>
-        </div>
-        <div>
-          <h3 id="how-title">Como funciona?</h3>
-          <ol class="steps">
-            <li>1️⃣ Clique no botão e acesse o formulário.</li>
-            <li>2️⃣ Responda com sinceridade — você pode se identificar ou não.</li>
-            <li>3️⃣ As respostas serão analisadas pela coordenação pedagógica para aprimorar o ambiente escolar.</li>
-          </ol>
-        </div>
-      </div>
-    </section>
+.container{
+  width:92%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:1.25rem 0;
+}
 
-    <section class="card" aria-labelledby="about-title">
-      <div class="card-inner">
-        <div class="icon-wrap" aria-hidden="true">
-          <svg class="feature-icon" width="48" height="48" viewBox="0 0 24 24">
-            <path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H8l-5 3V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-          </svg>
-        </div>
-        <div>
-          <h3 id="about-title">Sobre o projeto</h3>
-          <p>
-            O Canal de Escuta faz parte de um projeto interventivo do estágio de Licenciatura em Enfermagem (Unicamp), realizado no Instituto Educacional Trianon. O projeto busca aproximar a escola dos alunos, valorizando o diálogo, a empatia e a construção coletiva de soluções.
-          </p>
-        </div>
-      </div>
-    </section>
+/* Header */
+.site-header{padding:1rem 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:0.9rem}
+.logo{color:var(--primary)}
+.titles h1{font-size:1.15rem;margin:0;font-weight:700}
+.subtitle{margin:0;font-size:0.9rem;color:var(--muted)}
 
-    <section class="cta" aria-labelledby="cta-title">
-      <h3 id="cta-title">📩 Acesse o formulário</h3>
-      <p>Se preferir, você também pode abrir o formulário abaixo.</p>
-      <a class="btn large" href="https://docs.google.com/forms/d/e/1FAIpQLSfOy_RlPwon6Fhk13V88O_FCjgmF14OnLKqZ6727gmkRhC2UA/viewform?usp=header" rel="noopener" target="_blank" aria-label="Responder ao Formulário de Escuta (abre em nova aba)">
-        Responder ao Formulário de Escuta
-      </a>
-      <p class="small-muted">Sua voz é importante. Falar é um ato de coragem e cuidado.</p>
-    </section>
-  </main>
+/* Hero */
+.hero{margin-top:0.6rem}
+.hero-inner{display:flex;flex-direction:column;gap:1rem;padding:1rem;border-radius:var(--radius);background:linear-gradient(135deg, rgba(43,108,176,0.06), rgba(255,144,104,0.03));align-items:stretch}
+.hero-text{flex:1}
+.hero h2{margin:0 0 0.5rem 0;font-size:1.5rem}
+.lead{margin:0 0 1rem 0;color:var(--text);opacity:0.95}
+.hero-actions{display:flex;gap:0.6rem;align-items:center;flex-wrap:wrap}
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <p>Instituto Educacional Trianon — Canal de Escuta • Projeto em parceria com Unicamp</p>
-      <p class="small-muted">As respostas ao formulário são tratadas com confidencialidade pela coordenação pedagógica.</p>
-    </div>
-  </footer>
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:0.6rem;text-decoration:none;padding:0.7rem 1rem;border-radius:12px;color:var(--text);border:1px solid transparent;font-weight:700;transition:transform .14s ease,box-shadow .14s ease}
+.btn .icon{opacity:0.95}
+.btn.primary{background:linear-gradient(90deg,var(--primary),#4aa0e0);color:white;box-shadow:0 6px 18px rgba(43,108,176,0.12)}
+.btn.ghost{background:transparent;color:var(--primary);border:1px solid rgba(43,108,176,0.12)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(16,32,39,0.06)}
+.btn:active{transform:translateY(-1px)}
 
-</body>
-</html>
+.btn.large{padding:0.9rem 1.25rem;font-size:1rem;border-radius:14px}
+.cta-animated{animation:pulse 2.5s infinite 1s}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(43,108,176,0.18)}70%{box-shadow:0 0 0 18px rgba(43,108,176,0)}100%{box-shadow:0 0 0 0 rgba(43,108,176,0)}}
+
+.small-muted{color:var(--muted);font-size:0.95rem;margin-top:0.6rem}
+
+/* Illustration */
+.hero-visual{display:block;margin-top:0.6rem}
+.illustration{width:100%;height:auto;border-radius:12px}
+
+/* Cards */
+.card{background:var(--card);border-radius:12px;padding:1rem;margin-top:1rem;box-shadow:0 10px 30px rgba(16,32,39,0.04)}
+.card-inner{display:flex;gap:1rem;align-items:flex-start}
+.icon-wrap{flex:0 0 64px;display:flex;align-items:center;justify-content:center;color:var(--primary)}
+.feature-icon{color:var(--primary)}
+.steps{margin:0;padding-left:1.15rem}
+
+/* CTA Section */
+.cta{display:flex;flex-direction:column;align-items:center;text-align:center;padding:1.25rem;margin-top:1rem}
+.cta .btn{min-width:240px}
+
+/* Footer */
+.site-footer{margin-top:1.25rem;padding:1rem 0;color:var(--muted);font-size:0.95rem;text-align:center}
+
+/* Accessibility focus */
+a:focus, button:focus {outline:3px solid rgba(74,160,224,0.25);outline-offset:4px;border-radius:8px}
+
+/* Responsive */
+@media(min-width:880px){
+  .hero-inner{flex-direction:row;align-items:center;padding:2rem}
+  .hero-text{flex:1;padding-right:1rem}
+  .hero-visual{flex:0 0 420px;margin-top:0}
+  .hero h2{font-size:2rem}
+}
+
+@media(min-width:1200px){
+  .container{max-width:1200px}
+}
+
+/* small fixes */
+ol.steps li{margin-bottom:0.5rem}
